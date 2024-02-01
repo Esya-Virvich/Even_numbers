@@ -1,0 +1,17 @@
+array = [] 
+
+while True:
+    value = input("Enter the value (if you want to complete the entry, press .):")
+    if value == ".":
+        break
+    array.append(int(value)) 
+
+print("All the numbers in your array:")    
+print(array)
+    
+def even_numbers(arr, count):
+    even_numbers = [num for num in arr if num % 2 == 0]
+    return even_numbers[-count:]
+
+print("Even numbers in your array:")
+print(even_numbers(array, 100)) 
